@@ -1,0 +1,19 @@
+[package]
+name = "razmount"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+azure_core = "0.16.0"
+azure_storage = "0.16.0"
+azure_storage_blobs = "0.16.0"
+clap = { version = "4.4.6", features = ["derive"] }
+env_logger = "0.10.0"
+futures = "0.3.28"
+log = "0.4.20"
+projfs = { version = "0.1.2", path = "../projfs-rs" }
+tokio = { version = "1.33.0", features = ["macros", "rt-multi-thread"] }
+url = { version = "2.4.1", features = ["serde"] }
